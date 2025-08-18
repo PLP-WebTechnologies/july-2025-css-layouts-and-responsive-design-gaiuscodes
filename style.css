@@ -1,0 +1,251 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header styles using Flexbox */
+.main-header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation styles using Flexbox */
+.main-nav {
+    background-color: #343a40;
+    padding: 0 1rem;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #495057;
+}
+
+/* Main container using CSS Grid */
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content sidebar";
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Content area styles */
+.content-area {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.content-card h2 {
+    color: #2575fc;
+    margin-bottom: 1rem;
+}
+
+.content-card p {
+    margin-bottom: 1rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sidebar-widget {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.sidebar-widget h3 {
+    color: #6a11cb;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.sidebar-widget ul {
+    list-style: none;
+}
+
+.sidebar-widget li {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.sidebar-widget a {
+    text-decoration: none;
+    color: #495057;
+    transition: color 0.3s ease;
+}
+
+.sidebar-widget a:hover {
+    color: #2575fc;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag-list li {
+    background-color: #e9ecef;
+    border-radius: 20px;
+    padding: 0.25rem 0.75rem;
+}
+
+.tag-list a {
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.tag-list a:hover {
+    color: #2575fc;
+}
+
+/* Footer styles using Flexbox */
+.main-footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+    
+    .header-content p {
+        font-size: 1rem;
+    }
+    
+    .main-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "content"
+            "sidebar";
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-list a {
+        padding: 0.75rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .footer-content {
+        padding: 0 1rem;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .main-header {
+        padding: 1.5rem 1rem;
+    }
+    
+    .content-card,
+    .sidebar-widget {
+        padding: 1rem;
+    }
+    
+    .tag-list {
+        justify-content: center;
+    }
+    
+    .main-nav {
+        padding: 0;
+    }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 320px) {
+    .header-content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .content-card,
+    .sidebar-widget {
+        padding: 0.75rem;
+    }
+}

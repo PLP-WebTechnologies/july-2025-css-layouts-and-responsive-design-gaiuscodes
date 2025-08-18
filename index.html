@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox and Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Modern Web Design</h1>
+            <p>Using Flexbox and Grid for Responsive Layouts</p>
+        </div>
+    </header>
+
+    <!-- Navigation bar -->
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area with sidebar -->
+    <main class="main-container">
+        <!-- Content area -->
+        <section class="content-area">
+            <article class="content-card">
+                <h2>Welcome to Our Website</h2>
+                <p>This webpage demonstrates modern CSS layout techniques using both Flexbox and Grid. The layout is fully responsive and adapts to different screen sizes.</p>
+                <p>On desktop, you'll see a multi-column layout. On tablets, the layout adjusts to a two-column format. On mobile devices, everything stacks vertically for optimal viewing.</p>
+            </article>
+
+            <article class="content-card">
+                <h2>CSS Grid for Main Layout</h2>
+                <p>The main container uses CSS Grid to create a flexible layout that adapts to different screen sizes. Grid is perfect for two-dimensional layouts where we need control over both rows and columns.</p>
+                <p>In this example, the main container uses grid-template-areas to define the layout structure, making it easy to visualize and modify.</p>
+            </article>
+
+            <article class="content-card">
+                <h2>Flexbox for Component Alignment</h2>
+                <p>Flexbox is used for one-dimensional layouts, such as the navigation bar and these content cards. Flexbox excels at distributing space and aligning items within a container.</p>
+                <p>The cards in this content area are arranged using Flexbox, which makes them responsive and easy to align.</p>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Latest News</h3>
+                <ul>
+                    <li><a href="#">New CSS Features in 2025</a></li>
+                    <li><a href="#">Responsive Design Best Practices</a></li>
+                    <li><a href="#">Flexbox vs Grid: When to Use Which</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Popular Tags</h3>
+                <ul class="tag-list">
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">Responsive</a></li>
+                    <li><a href="#">Layout</a></li>
+                    <li><a href="#">Design</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Modern Web Design. All rights reserved.</p>
+            <p>Created with Flexbox and Grid</p>
+        </div>
+    </footer>
+</body>
+</html>
