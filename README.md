@@ -8,19 +8,6 @@
 
 ---
 
-## 📋 **What You'll Need**
-* 💻 A computer with internet access.
-* ✍️ A code editor (e.g., Visual Studio Code).
-* 🖥️ MySQL Workbench or another SQL database environment.
-
----
-
-## 📝 **Submission Instructions**  
-📂 Write all your SQL queries in the **answers.sql** file.  
-✍️ Answer each question concisely and ensure your queries are clear and correct.  
-🗣️ Structure your responses clearly, and use comments if necessary to explain your approach.
-
----
 
 ## 📚 **Assignment Questions**
 
@@ -42,4 +29,30 @@
 
 ---
 
-Good luck 🚀
+## 🧠 **JavaScript Learning Demos**
+
+This repository also includes several HTML files with embedded JavaScript demos to demonstrate fundamental programming concepts:
+
+### 1. [Variables and Data Types Demo](variables-demo.html)
+- Shows how to declare variables using `let`, `const`, and `var`
+- Demonstrates different data types: strings, numbers, booleans, arrays, and objects
+- Illustrates how to check variable types using `typeof`
+
+### 2. [Operators Demo](operators-demo.html)
+- Covers arithmetic operators: `+`, `-`, `*`, `/`, `%`, `**`
+- Shows comparison operators: `==`, `===`, `!=`, `!==`, `<`, `>`, etc.
+- Demonstrates logical operators: `&&`, `||`, `!`
+- Explains assignment operators: `=`, `+=`, `-=`, `*=`, etc.
+
+### 3. [Conditionals Demo](conditionals-demo.html)
+- Illustrates `if/else` statements
+- Shows `else if` chains for multiple conditions
+- Demonstrates `switch` statements
+- Explains the ternary operator `condition ? value1 : value2`
+
+### 4. [User Input and DOM Manipulation Demo](user-input-demo.html)
+- Shows how to capture user input from form elements
+- Demonstrates dynamic content creation and modification
+- Illustrates form validation techniques
+- Shows how to respond to user interactions with event handlers
+
